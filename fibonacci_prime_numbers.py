@@ -20,6 +20,8 @@ def is_prime_number(num):
             return False
     return True
 
+##### Fibonacci Prime Numbers implementation #####
+
 def prime_fibonacci_numbers(i):
     """Return i-element list of primes from fibonacci sequence starting from the beginning of the sequence"""
     result = []

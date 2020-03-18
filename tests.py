@@ -40,7 +40,7 @@ class FibonacciPrimeNumbers(unittest.TestCase):
         """Check if not integer number is correctly determined not to be prime"""
         self.assertFalse(is_prime_number(-1))
 
-    def test_prime_fibonacci_numbers_return_correct_list_of_n_primes(self):
+    def test_prime_fibonacci_numbers_returns_correct_list_of_n_primes(self):
         """Check if 'prime_fibonacci_numbers' returns correct list of n prime values from fibonacci sequence"""
         self.assertEqual(prime_fibonacci_numbers(1), [2])
         self.assertEqual(prime_fibonacci_numbers(3), [2, 3, 5])
