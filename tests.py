@@ -7,10 +7,10 @@ class FibonacciPrimeNumbers(unittest.TestCase):
 
     # Tests of fib(n)
     def test_fib_nth_element_is_correct(self):
-        """Check if 1st, 2nd, 5th and 10th element of fibonacci sequence is correct"""
+        """Check if 1st, 2nd, 3rd and 10th element of fibonacci sequence is correct"""
         self.assertEqual(fib(0), 0)
         self.assertEqual(fib(1), 1)
-        self.assertEqual(fib(4), 3)
+        self.assertEqual(fib(2), 1)
         self.assertEqual(fib(9), 34)
 
     def test_fib_negative_input_returns_message(self):
@@ -38,7 +38,6 @@ class FibonacciPrimeNumbers(unittest.TestCase):
     def test_is_negative_input_not_prime_number(self):
         """Check if negative number is correctly determined not to be prime"""
         self.assertFalse(is_prime_number(-1))
-        self.assertFalse(is_prime_number(-11))
 
     def test_is_non_integer_input_not_prime_number(self):
         """Check if not integer number is correctly determined not to be prime"""
@@ -60,7 +59,6 @@ class FibonacciPrimeNumbers(unittest.TestCase):
     def test_prime_fibonacci_numbers_returns_message_for_negative_input(self):
         """Check if 'prime_fibonacci_numbers' returns correctly message for negative input"""
         self.assertEqual(prime_fibonacci_numbers(-1), "Input must be not negative integer")
-        self.assertEqual(prime_fibonacci_numbers(-6), "Input must be not negative integer")
 
     def test_prime_fibonacci_numbers_returns_message_for_non_integer_input(self):
         """Check if 'prime_fibonacci_numbers' returns correctly message for negative input"""
